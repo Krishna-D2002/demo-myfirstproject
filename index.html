@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  body {
+    background: linear-gradient(to right, red, white);
+}
+
+</style>
+<body>
+<section>
+  <h1>Login</h1>
+  <div class="login-form">
+  <h3>Username</h3>
+  <div class="username">
+    <i class="fas"></i>
+    <input type="email" id="username" name="username" placeholder="tye your username">
+  </div>
+  <h3>Password</h3>
+  <div class="Password">
+    <i class="fas p"></i>
+    <input type="password" id="password" placeholder="type your password">
+  </div>
+  <h4>Forgeet Password</h4>
+</div>
+<button class="login" onclick="func()">
+  Login
+</button>
+<div class="alternative-signup">
+<p>Not a number <span>Sign-up</span></p>
+</div>
+</section>
+<script>
+  function func(){
+  var email=document.getElementById("username").value;
+  var pass=document.getElementById("password").value;
+  if (email=="krishna12@gmail.com" && pass== "Krishna12"){
+  alert("iam kappe pandu")
+  window.location.assign("loginpage.html")
+  }
+  else{
+    alert("wrong credentials")
+  }
+}
+</script>
+</body>
+</html>
